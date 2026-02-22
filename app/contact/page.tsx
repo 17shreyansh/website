@@ -32,18 +32,18 @@ export default function Contact() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-900 to-primary-700 text-white py-24">
+      <section className="bg-gradient-to-br from-slate-900 to-primary-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl"
           >
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-6xl lg:text-7xl font-bold mb-6">
               Get in Touch
             </h1>
             <p className="text-xl text-primary-100 leading-relaxed">
-              Have a project in mind? Our team is ready to help you with premium materials and expert guidance.
+              Have a project in mind? <span className="font-semibold">Nirmanveda</span> team is ready to help you with premium materials and expert guidance.
             </p>
           </motion.div>
         </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact Information</h2>
+                <h2 className="text-4xl font-bold text-gray-900 mb-8">Contact Information</h2>
                 
                 <div className="space-y-6">
                   <Card hover={false}>
@@ -70,8 +70,8 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                        <p className="text-gray-600">+91 98765 43210</p>
-                        <p className="text-gray-600">+91 98765 43211</p>
+                        <p className="text-gray-600">+91 [YOUR PHONE 1]</p>
+                        <p className="text-gray-600">+91 [YOUR PHONE 2]</p>
                       </div>
                     </div>
                   </Card>
@@ -83,8 +83,8 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                        <p className="text-gray-600">info@rsdbharti.com</p>
-                        <p className="text-gray-600">sales@rsdbharti.com</p>
+                        <p className="text-gray-600">info@nirmanveda.com</p>
+                        <p className="text-gray-600">sales@nirmanveda.com</p>
                       </div>
                     </div>
                   </Card>
@@ -97,9 +97,10 @@ export default function Contact() {
                       <div>
                         <h3 className="font-bold text-gray-900 mb-1">Address</h3>
                         <p className="text-gray-600">
-                          RSD Bharti Industries Pvt. Ltd.<br />
-                          Industrial Area, Sector 12<br />
-                          New Delhi - 110001<br />
+                          Nirmanveda<br />
+                          Listed by RSD Bharti Ltd.<br />
+                          [YOUR COMPLETE ADDRESS]<br />
+                          [CITY, STATE - PIN CODE]<br />
                           India
                         </p>
                       </div>
@@ -115,7 +116,7 @@ export default function Contact() {
                         <h3 className="font-bold text-gray-900 mb-1">Business Hours</h3>
                         <p className="text-gray-600">
                           Monday - Saturday<br />
-                          9:00 AM - 6:00 PM<br />
+                          [YOUR BUSINESS HOURS]<br />
                           Sunday: Closed
                         </p>
                       </div>
@@ -133,7 +134,7 @@ export default function Contact() {
                 viewport={{ once: true }}
               >
                 <Card hover={false}>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                  <h2 className="text-4xl font-bold text-gray-900 mb-6">Send us a Message</h2>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
@@ -237,9 +238,9 @@ export default function Contact() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Visit Our Office</h2>
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Visit Our Office</h2>
             <p className="text-xl text-gray-600">
-              Come see us at our location in New Delhi
+              Come see us at our location
             </p>
           </motion.div>
 
@@ -253,7 +254,7 @@ export default function Contact() {
               <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
               <p className="text-gray-600 font-medium">Map Integration Placeholder</p>
               <p className="text-gray-500 text-sm mt-2">
-                Industrial Area, Sector 12, New Delhi - 110001
+                [YOUR COMPLETE ADDRESS]
               </p>
             </div>
           </motion.div>
