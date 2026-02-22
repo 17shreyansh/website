@@ -7,8 +7,8 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'RSD Bharti Industries - Building India\'s Future with 25 Years of Trust',
-  description: 'Premium construction materials supplier with 25+ years of experience. Trusted by builders, contractors, and developers across India.',
+  title: 'Nirmanveda - Premium Construction Materials | Listed by RSD Bharti Ltd.',
+  description: 'Nirmanveda offers premium construction materials with 25+ years of experience. Listed by RSD Bharti Ltd. - Trusted by builders across India.',
 }
 
 export default function RootLayout({

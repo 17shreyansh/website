@@ -6,27 +6,33 @@ import Card from '@/components/Card'
 
 export default function About() {
   const timeline = [
-    { year: '1999', event: 'Founded RSD Bharti Industries with a vision to transform construction materials supply' },
-    { year: '2005', event: 'Expanded operations across North India, partnering with premium brands' },
-    { year: '2012', event: 'Achieved milestone of 500+ successful projects and established brand reputation' },
-    { year: '2018', event: 'Launched digital platform for seamless material ordering and tracking' },
+    { year: '1999', event: 'RSD Bharti Ltd. founded with a vision to transform construction materials supply in India' },
+    { year: '2005', event: 'Expanded operations across North India, partnering with premium brands like UltraTech and Tata' },
+    { year: '2012', event: 'Achieved milestone of 500+ successful projects and established strong brand reputation' },
+    { year: '2018', event: 'Launched Nirmanveda brand and digital platform for seamless material ordering' },
     { year: '2024', event: 'Celebrating 25 years of excellence with 1000+ projects and 12+ brand partnerships' },
   ]
 
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-900 to-primary-700 text-white py-24">
+      <section className="bg-gradient-to-br from-slate-900 to-primary-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl"
           >
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              25 Years of Building Excellence
+            <div className="inline-block bg-primary-500/20 border border-primary-500/30 px-3 py-1.5 rounded-md mb-5">
+              <span className="text-primary-400 text-sm font-medium">About Us</span>
+            </div>
+            <h1 className="text-6xl lg:text-7xl font-bold mb-6">
+              Nirmanveda
             </h1>
-            <p className="text-xl text-primary-100 leading-relaxed">
+            <p className="text-xl text-primary-100 leading-relaxed mb-4">
+              <span className="font-semibold">Listed by RSD Bharti Ltd.</span> — 25 Years of Building Excellence
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed">
               From a small venture to India's trusted construction materials partner, our journey is built on quality, integrity, and unwavering commitment to excellence.
             </p>
           </motion.div>
@@ -42,16 +48,16 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+              <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
                 <p>
-                  Founded in 1999, RSD Bharti Industries began with a simple yet powerful vision: to provide builders and contractors with genuine, high-quality construction materials they could trust.
+                  <span className="font-bold text-primary-700">Nirmanveda</span>, listed by <span className="font-semibold">RSD Bharti Ltd.</span>, began in 1999 with a simple yet powerful vision: to provide builders and contractors with genuine, high-quality construction materials they could trust.
                 </p>
                 <p>
-                  Over the past 25 years, we've grown from a local supplier to a recognized name in the construction industry, serving thousands of projects across India. Our success is built on strong relationships with premium brands and an unwavering commitment to quality.
+                  <span className="font-semibold">RSD Bharti Ltd.</span> has been a cornerstone in the construction materials industry for over 25 years. Through our brand <span className="font-bold text-primary-700">Nirmanveda</span>, we've grown from a local supplier to a recognized name, serving thousands of projects across India.
                 </p>
                 <p>
-                  Today, we're proud to be the preferred partner for builders, contractors, and developers who demand nothing but the best for their projects.
+                  Our success is built on strong relationships with premium brands like UltraTech, Tata Tiscon, JSW, and an unwavering commitment to quality. Today, we're proud to be the preferred partner for builders, contractors, and developers who demand nothing but the best.
                 </p>
               </div>
             </motion.div>
@@ -70,7 +76,7 @@ export default function About() {
               ].map((stat, index) => (
                 <Card key={index} className="text-center">
                   <stat.icon className="w-12 h-12 mx-auto mb-4 text-primary-700" />
-                  <div className="text-3xl font-bold text-gray-900 mb-1">{stat.label}</div>
+                  <div className="text-4xl font-bold text-gray-900 mb-1">{stat.label}</div>
                   <div className="text-gray-600">{stat.sublabel}</div>
                 </Card>
               ))}
@@ -128,9 +134,9 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Journey</h2>
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Our Journey</h2>
             <p className="text-xl text-gray-600">
-              Milestones that shaped our legacy
+              Milestones that shaped RSD Bharti Ltd. and Nirmanveda
             </p>
           </motion.div>
 

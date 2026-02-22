@@ -8,7 +8,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <Image src="/logo.jpeg" alt="RSD Bharti" width={65} height={65} className="rounded-xl mb-5" />
+            <Image src="/logo.jpeg" alt="Nirmanveda" width={65} height={65} className="rounded-xl mb-5" />
+            <h3 className="text-white font-bold text-lg mb-2">Nirmanveda</h3>
+            <p className="text-xs text-gray-400 mb-3">Listed by RSD Bharti Ltd.</p>
             <p className="text-sm text-gray-400 leading-relaxed">
               Building India's future with premium construction materials and 25 years of trusted service.
             </p>
@@ -62,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} RSD Bharti Industries Pvt. Ltd. All rights reserved.</p>
+          <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Nirmanveda - Listed by RSD Bharti Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative bg-primary-900 text-white overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-primary-800 opacity-50" style={{ clipPath: 'polygon(30% 0, 100% 0, 100% 100%, 0% 100%)' }} />
+      <section className="relative bg-slate-900 text-white overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-800 opacity-50" style={{ clipPath: 'polygon(30% 0, 100% 0, 100% 100%, 0% 100%)' }} />
         
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-28">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
@@ -20,22 +20,22 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-7"
             >
-              <div className="inline-block bg-gold-500/20 border border-gold-500/30 px-3 py-1.5 rounded-md mb-5">
-                <span className="text-gold-400 text-sm font-medium">Est. 1999 • 25 Years Strong</span>
+              <div className="inline-block bg-primary-500/20 border border-primary-500/30 px-3 py-1.5 rounded-md mb-5">
+                <span className="text-primary-400 text-sm font-medium">Est. 1999 • 25 Years Strong</span>
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 leading-[1.1]">
-                Building India's Future with
-                <span className="block text-gold-400 mt-2">25 Years of Trust</span>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-5 leading-[1.05]">
+                <span className="text-primary-400">Nirmanveda</span>
+                <span className="block text-2xl sm:text-3xl text-gray-300 mt-3 font-normal">Listed by RSD Bharti Ltd.</span>
               </h1>
               
-              <p className="text-lg text-gray-300 mb-8 max-w-xl leading-relaxed">
-                RSD Bharti Industries Pvt. Ltd. — Leading Suppliers of Premium Cement, Steel, and Construction Essentials.
+              <p className="text-xl text-gray-300 mb-8 max-w-xl leading-relaxed font-medium">
+                Premium Cement, Steel, and Construction Materials — Building India's Future with 25 Years of Trust
               </p>
               
               <div className="flex flex-wrap gap-3">
                 <Link href="#download">
-                  <button className="bg-gold-500 text-gray-900 px-6 py-3.5 rounded-lg font-semibold hover:bg-gold-400 transition-all shadow-lg">
+                  <button className="bg-primary-600 text-white px-6 py-3.5 rounded-lg font-semibold hover:bg-primary-700 transition-all shadow-lg">
                     Download App
                   </button>
                 </Link>
@@ -54,12 +54,12 @@ export default function Home() {
               className="lg:col-span-5 hidden lg:block"
             >
               <div className="relative">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gold-500/20 rounded-full blur-2xl" />
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary-500/20 rounded-full blur-2xl" />
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
-                      <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
-                        <Award size={20} className="text-gray-900" />
+                      <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
+                        <Award size={20} className="text-white" />
                       </div>
                       <div>
                         <div className="text-sm text-gray-400">Experience</div>
@@ -76,8 +76,8 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
-                      <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
-                        <TrendingUp size={20} className="text-gray-900" />
+                      <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
+                        <TrendingUp size={20} className="text-white" />
                       </div>
                       <div>
                         <div className="text-sm text-gray-400">Projects</div>
@@ -129,13 +129,16 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <div className="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-md text-sm font-medium mb-4">
-                About Us
+                About Nirmanveda
               </div>
-              <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-5 leading-tight">
+              <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-5 leading-tight">
                 A Legacy of Strength
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                At RSD Bharti Industries, we don't just sell materials; we provide the foundation for your dreams. With over 25 years of market experience, we have become a backbone for the construction industry, ensuring that every structure built with our supplies stands the test of time.
+                <span className="font-bold text-primary-700">Nirmanveda</span>, listed by <span className="font-semibold">RSD Bharti Ltd.</span>, is your trusted partner for premium construction materials. We don't just sell materials; we provide the foundation for your dreams.
+              </p>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                With over 25 years of market experience through RSD Bharti Ltd., we have become a backbone for the construction industry, ensuring that every structure built with our supplies stands the test of time.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Whether you are a local contractor or a large-scale developer, we bridge the gap between world-class manufacturers and your construction site.
@@ -155,9 +158,9 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="space-y-4"
             >
-              <div className="bg-gradient-to-br from-primary-700 to-primary-900 text-white p-8 rounded-2xl">
-                <Award className="w-12 h-12 mb-4 text-gold-400" />
-                <h3 className="text-2xl font-bold mb-2">25 Years Experience</h3>
+              <div className="bg-gradient-to-br from-primary-700 to-slate-900 text-white p-8 rounded-2xl">
+                <Award className="w-12 h-12 mb-4 text-primary-400" />
+                <h3 className="text-3xl font-bold mb-2">25 Years Experience</h3>
                 <p className="text-primary-100">Quarter-century of industry expertise in construction materials.</p>
               </div>
               
@@ -185,81 +188,120 @@ export default function Home() {
             <div className="inline-block bg-primary-100 text-primary-700 px-3 py-1 rounded-md text-sm font-medium mb-4">
               Our Materials
             </div>
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              High-Performance Materials
-              <span className="block">for Every Project</span>
+            <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+              Premium Construction Materials
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl">
               We curate only the "A-Grade" brands of India to ensure your construction is earthquake-resistant and durable.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition-shadow"
-            >
-              <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-5">
-                <Building2 className="text-blue-600" size={28} />
+          {/* Premium Cement Brands - Logo Style */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-16"
+          >
+            <div className="bg-white rounded-2xl p-8 border-2 border-primary-200 shadow-lg">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center">
+                  <Building2 className="text-blue-600" size={28} />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-gray-900">Premium Cement</h3>
+                  <p className="text-gray-600">The Engineer's Choice for Superior Strength</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Premium Cement</h3>
-              <p className="text-gray-600 mb-5">The Engineer's Choice for superior strength and reliability.</p>
-              <div className="space-y-2 mb-6">
-                {['UltraTech — The Engineer\'s Choice', 'Dalmia — Future Today', 'ACC & Ambuja — Giants of Reliability', 'Shree & Birla Samrat'].map((brand) => (
-                  <div key={brand} className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="text-blue-600 mr-2" size={16} />
-                    {brand}
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                {[
+                  { name: 'UltraTech', tagline: 'Engineer\'s Choice' },
+                  { name: 'Dalmia', tagline: 'Future Today' },
+                  { name: 'ACC', tagline: 'Trusted Quality' },
+                  { name: 'Ambuja', tagline: 'Reliability' },
+                  { name: 'Shree', tagline: 'Advanced Tech' },
+                  { name: 'Birla', tagline: 'Proven Track' },
+                ].map((brand) => (
+                  <div key={brand.name} className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 text-center border border-blue-200 hover:shadow-md transition-shadow">
+                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <span className="text-white font-bold text-lg">{brand.name[0]}</span>
+                    </div>
+                    <div className="font-bold text-gray-900 text-sm mb-1">{brand.name}</div>
+                    <div className="text-xs text-gray-600">{brand.tagline}</div>
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
+          </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition-shadow"
-            >
-              <div className="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mb-5">
-                <Hammer className="text-gray-700" size={28} />
+          {/* TMT Steel Brands - Logo Style */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="mb-16"
+          >
+            <div className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-lg">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center">
+                  <Hammer className="text-slate-700" size={28} />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-gray-900">TMT Steel (Saria)</h3>
+                  <p className="text-gray-600">Precision & Strength for Earthquake-Resistant Structures</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">TMT Steel & Rebars</h3>
-              <p className="text-gray-600 mb-5">Precision and strength for earthquake-resistant structures.</p>
-              <div className="space-y-2 mb-6">
-                {['Tata Tiscon — India\'s Preferred', 'JSW & Jindal — Precision & Strength', 'Shyam & Kamdhenu', 'Balmukund Steel'].map((brand) => (
-                  <div key={brand} className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="text-gray-700 mr-2" size={16} />
-                    {brand}
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                {[
+                  { name: 'Tata Tiscon', tagline: 'India\'s Preferred' },
+                  { name: 'JSW', tagline: 'Precision Steel' },
+                  { name: 'Jindal', tagline: 'Strength' },
+                  { name: 'Shyam', tagline: 'Advanced TMT' },
+                  { name: 'Kamdhenu', tagline: 'Quality Bars' },
+                ].map((brand) => (
+                  <div key={brand.name} className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-4 text-center border border-slate-200 hover:shadow-md transition-shadow">
+                    <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <span className="text-white font-bold text-lg">{brand.name[0]}</span>
+                    </div>
+                    <div className="font-bold text-gray-900 text-sm mb-1">{brand.name}</div>
+                    <div className="text-xs text-gray-600">{brand.tagline}</div>
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
+          </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition-shadow"
-            >
-              <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-5">
-                <Package className="text-amber-600" size={28} />
+          {/* Construction Essentials */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center">
+                  <Package className="text-amber-600" size={28} />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-gray-900">Construction Essentials</h3>
+                  <p className="text-gray-600">High-Purity Raw Materials for Superior Finishing</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Construction Essentials</h3>
-              <p className="text-gray-600 mb-5">High-purity raw materials for superior finishing.</p>
-              <div className="space-y-2 mb-6">
-                {['High-Purity Screened Sand', 'Crushed Stone Chips', 'Premium Binding Wire', 'Quality Aggregates'].map((item) => (
-                  <div key={item} className="flex items-center text-sm text-gray-700">
-                    <CheckCircle className="text-amber-600 mr-2" size={16} />
-                    {item}
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {['Screened Sand', 'Stone Chips', 'Binding Wire', 'Aggregates'].map((item) => (
+                  <div key={item} className="flex items-center gap-2 bg-gray-50 rounded-lg p-3 border border-gray-200">
+                    <CheckCircle className="text-amber-600" size={18} />
+                    <span className="text-sm font-medium text-gray-700">{item}</span>
                   </div>
                 ))}
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
 
           <div className="mt-10">
             <Link href="/materials">
@@ -274,7 +316,7 @@ export default function Home() {
       {/* App Promo Section */}
       <section className="py-20 lg:py-28 bg-white" id="download">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="bg-gradient-to-br from-primary-900 to-primary-700 rounded-3xl overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-900 to-primary-900 rounded-3xl overflow-hidden">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -282,10 +324,10 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="p-10 lg:p-16"
               >
-                <div className="inline-block bg-gold-500/20 border border-gold-500/30 px-3 py-1.5 rounded-md mb-5">
-                  <span className="text-gold-400 text-sm font-medium">Mobile App</span>
+                <div className="inline-block bg-primary-500/20 border border-primary-500/30 px-3 py-1.5 rounded-md mb-5">
+                  <span className="text-primary-400 text-sm font-medium">Mobile App</span>
                 </div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
+                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight">
                   Order Materials On The Go
                 </h2>
                 <p className="text-lg text-gray-300 mb-8 leading-relaxed">
@@ -300,14 +342,14 @@ export default function Home() {
                     '24/7 support'
                   ].map((feature) => (
                     <div key={feature} className="flex items-center text-white">
-                      <CheckCircle className="text-gold-400 mr-3" size={20} />
-                      {feature}
+                      <CheckCircle className="text-primary-400" size={20} />
+                      <span className="ml-3">{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  <button className="bg-gold-500 text-gray-900 px-5 py-3 rounded-lg font-semibold hover:bg-gold-400 transition-colors inline-flex items-center">
+                  <button className="bg-primary-600 text-white px-5 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors inline-flex items-center">
                     <Download className="mr-2" size={18} />
                     Android
                   </button>
@@ -324,15 +366,15 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="relative h-full min-h-[400px] hidden lg:block"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-800 to-primary-600 opacity-50" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-800 to-slate-800 opacity-50" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <div className="w-64 h-[500px] bg-white/10 backdrop-blur-sm rounded-[3rem] border-8 border-white/20 p-4">
-                    <div className="w-full h-full bg-gradient-to-br from-primary-800 to-primary-900 rounded-[2.5rem] flex items-center justify-center">
+                    <div className="w-full h-full bg-gradient-to-br from-primary-800 to-slate-900 rounded-[2.5rem] flex items-center justify-center">
                       <div className="text-center">
                         <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <span className="text-3xl font-bold text-white">RB</span>
+                          <span className="text-3xl font-bold text-white">N</span>
                         </div>
-                        <p className="text-sm text-gray-300">Mobile App</p>
+                        <p className="text-sm text-gray-300">Nirmanveda App</p>
                       </div>
                     </div>
                   </div>

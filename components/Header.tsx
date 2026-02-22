@@ -47,16 +47,19 @@ export default function Header() {
             <div className="relative overflow-hidden rounded-lg transition-transform duration-300 group-hover:scale-[1.02]">
               <Image 
                 src="/logo.jpeg" 
-                alt="RSD Bharti" 
+                alt="Nirmanveda" 
                 width={48} 
                 height={48} 
                 className="object-cover"
-                priority // Load logo immediately
+                priority
               />
             </div>
-            <span className={`font-bold text-lg tracking-tight text-gray-900 ${scrolled ? 'opacity-100' : 'opacity-90'}`}>
-              RSD Bharti
-            </span>
+            <div className="flex flex-col">
+              <span className={`font-bold text-xl tracking-tight text-slate-900 ${scrolled ? 'opacity-100' : 'opacity-90'}`}>
+                Nirmanveda
+              </span>
+              <span className="text-[10px] text-gray-500 -mt-1">Listed by RSD Bharti Ltd.</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation - Clean & Simple */}

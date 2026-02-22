@@ -36,18 +36,18 @@ export default function Materials() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-900 to-primary-700 text-white py-24">
+      <section className="bg-gradient-to-br from-slate-900 to-primary-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl"
           >
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-6xl lg:text-7xl font-bold mb-6">
               Premium Construction Materials
             </h1>
             <p className="text-xl text-primary-100 leading-relaxed">
-              Sourced directly from India's most trusted manufacturers. Every material is genuine, tested, and delivered with care.
+              Sourced directly from India's most trusted manufacturers. Every material is genuine, tested, and delivered with care by <span className="font-semibold">Nirmanveda</span>.
             </p>
           </motion.div>
         </div>
@@ -95,7 +95,7 @@ export default function Materials() {
             <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Building2 className="text-white" size={40} />
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Premium Cement</h2>
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Premium Cement</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Top-grade cement from India's leading manufacturers for superior strength and durability
             </p>
@@ -129,10 +129,10 @@ export default function Materials() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <div className="w-20 h-20 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Hammer className="text-white" size={40} />
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">TMT Steel</h2>
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">TMT Steel (Saria)</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               High-strength TMT bars from trusted brands for robust structural integrity
             </p>
@@ -169,7 +169,7 @@ export default function Materials() {
             <div className="w-20 h-20 bg-gradient-to-br from-amber-600 to-amber-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Package className="text-white" size={40} />
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Construction Essentials</h2>
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Construction Essentials</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Complete range of construction materials for every project requirement
             </p>
@@ -195,14 +195,14 @@ export default function Materials() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-gradient-to-br from-primary-900 to-primary-700 text-white">
+      <section className="py-24 bg-gradient-to-br from-slate-900 to-primary-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-5xl font-bold mb-6">
               Need Help Choosing Materials?
             </h2>
             <p className="text-xl text-primary-100 mb-10">
