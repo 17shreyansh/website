@@ -5,6 +5,7 @@ import { Building2, Hammer, Package, CheckCircle, Shield, Award } from 'lucide-r
 import Card from '@/components/Card'
 import Button from '@/components/Button'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Materials() {
   const cementBrands = [
@@ -101,21 +102,43 @@ export default function Materials() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {cementBrands.map((brand, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-              >
-                <Card>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{brand.name}</h3>
-                  <p className="text-gray-600 leading-relaxed">{brand.description}</p>
-                </Card>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-red-500 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Ultratech_Cement_vector_Logo.png" alt="UltraTech" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">UltraTech</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-blue-600 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Dalmia logo.jpg" alt="Dalmia" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Dalmia</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/ACC logo.webp" alt="ACC" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">ACC</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-green-600 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Ambuja logo.jpg" alt="Ambuja" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Ambuja</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-orange-600 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Shree logo.png" alt="Shree" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Shree</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.25 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-yellow-600 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Birla logo.jpg" alt="Birla" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Birla</div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -138,21 +161,37 @@ export default function Materials() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {steelBrands.map((brand, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-              >
-                <Card>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{brand.name}</h3>
-                  <p className="text-gray-600 leading-relaxed">{brand.description}</p>
-                </Card>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-blue-700 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Tata Tiscon logo.webp" alt="Tata Tiscon" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Tata Tiscon</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.05 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-red-600 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/JSW logo.jpg" alt="JSW Steel" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">JSW Steel</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-orange-600 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Jindal logo.png" alt="Jindal" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Jindal</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-green-700 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Shyam logo.png" alt="Shyam Steel" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Shyam Steel</div>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-yellow-600 hover:shadow-lg transition-all">
+              <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                <Image src="/Kamdhenu logo.png" alt="Kamdhenu" fill className="object-contain p-2" />
+              </div>
+              <div className="font-bold text-gray-900 text-center text-sm">Kamdhenu</div>
+            </motion.div>
           </div>
         </div>
       </section>

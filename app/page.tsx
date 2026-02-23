@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Award, Shield, Users, ArrowRight, Download, CheckCircle, Building2, Hammer, Package, Star, TrendingUp } from 'lucide-react'
 import Button from '@/components/Button'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -214,23 +215,48 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                {[
-                  { name: 'UltraTech', tagline: 'Engineer\'s Choice' },
-                  { name: 'Dalmia', tagline: 'Future Today' },
-                  { name: 'ACC', tagline: 'Trusted Quality' },
-                  { name: 'Ambuja', tagline: 'Reliability' },
-                  { name: 'Shree', tagline: 'Advanced Tech' },
-                  { name: 'Birla', tagline: 'Proven Track' },
-                ].map((brand) => (
-                  <div key={brand.name} className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 text-center border border-blue-200 hover:shadow-md transition-shadow">
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <span className="text-white font-bold text-lg">{brand.name[0]}</span>
-                    </div>
-                    <div className="font-bold text-gray-900 text-sm mb-1">{brand.name}</div>
-                    <div className="text-xs text-gray-600">{brand.tagline}</div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-red-500 hover:shadow-lg transition-all">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Ultratech_Cement_vector_Logo.png" alt="UltraTech" fill className="object-contain p-2" />
                   </div>
-                ))}
+                  <div className="font-bold text-gray-900 text-center text-sm">UltraTech</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-blue-600 hover:shadow-lg transition-all">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Dalmia logo.jpg" alt="Dalmia" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">Dalmia</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/ACC logo.webp" alt="ACC" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">ACC</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-green-600 hover:shadow-lg transition-all">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Ambuja logo.jpg" alt="Ambuja" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">Ambuja</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-orange-600 hover:shadow-lg transition-all">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Shree logo.png" alt="Shree" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">Shree</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-yellow-600 hover:shadow-lg transition-all">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Birla logo.jpg" alt="Birla" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">Birla</div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -254,22 +280,41 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                {[
-                  { name: 'Tata Tiscon', tagline: 'India\'s Preferred' },
-                  { name: 'JSW', tagline: 'Precision Steel' },
-                  { name: 'Jindal', tagline: 'Strength' },
-                  { name: 'Shyam', tagline: 'Advanced TMT' },
-                  { name: 'Kamdhenu', tagline: 'Quality Bars' },
-                ].map((brand) => (
-                  <div key={brand.name} className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-4 text-center border border-slate-200 hover:shadow-md transition-shadow">
-                    <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center mx-auto mb-2">
-                      <span className="text-white font-bold text-lg">{brand.name[0]}</span>
-                    </div>
-                    <div className="font-bold text-gray-900 text-sm mb-1">{brand.name}</div>
-                    <div className="text-xs text-gray-600">{brand.tagline}</div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-blue-700 hover:shadow-lg transition-all group">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Tata Tiscon logo.webp" alt="Tata Tiscon" fill className="object-contain p-2" />
                   </div>
-                ))}
+                  <div className="font-bold text-gray-900 text-center text-sm">Tata Tiscon</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-red-600 hover:shadow-lg transition-all group">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/JSW logo.jpg" alt="JSW Steel" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">JSW Steel</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-orange-600 hover:shadow-lg transition-all group">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Jindal logo.png" alt="Jindal" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">Jindal</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-green-700 hover:shadow-lg transition-all group">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Shyam logo.png" alt="Shyam Steel" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">Shyam Steel</div>
+                </div>
+                
+                <div className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-yellow-600 hover:shadow-lg transition-all group">
+                  <div className="aspect-square relative bg-gray-50 rounded-lg flex items-center justify-center mb-3">
+                    <Image src="/Kamdhenu logo.png" alt="Kamdhenu" fill className="object-contain p-2" />
+                  </div>
+                  <div className="font-bold text-gray-900 text-center text-sm">Kamdhenu</div>
+                </div>
               </div>
             </div>
           </motion.div>
