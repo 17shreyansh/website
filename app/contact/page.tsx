@@ -70,8 +70,9 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                        <p className="text-gray-600">+91 [YOUR PHONE 1]</p>
-                        <p className="text-gray-600">+91 [YOUR PHONE 2]</p>
+                        <p className="text-gray-600">+91 8809997729</p>
+                        <p className="text-gray-600">+91 8539997729</p>
+                        <p className="text-gray-600">+91 9771297729</p>
                       </div>
                     </div>
                   </Card>
